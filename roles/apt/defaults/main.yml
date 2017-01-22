@@ -1,0 +1,41 @@
+---
+
+apt_cache_valid_time: 3600
+apt_update: true
+
+apt_upgrade: true
+apt_upgrade_type: safe          # safe, full or dist
+
+apt_dependencies:
+  - python-apt
+  - aptitude
+
+apt_keys: false
+# apt_keys:
+#   - 10297572097ejbcakjsdha
+#   - keyserver: keys.foo.com
+#     id: 120930293810293
+
+apt_install: false
+# apt_install:
+#   - python-apt
+#   - unattended-upgrades
+
+apt_repositories: false
+# apt_repositories:
+#   - ppa:ondrej/php5
+#   - repo: ppa:spotify/spotify
+#     key: BBEBDC...
+#   - repo: http://foo.bar.com
+#     key:
+#       id: 12345678..
+#       keyserver: pgp.mit.edu
+
+apt_remove_repositories: false
+# apt_remove_repositories:
+#   - ppa:ondrej/php5
+
+apt_remove: false
+# apt_remove:
+#   - python-apt
+#   - unattended-upgrades

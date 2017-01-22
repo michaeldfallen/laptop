@@ -1,0 +1,10 @@
+---
+
+- name: Install dependencies.
+  apt:
+    pkg="{{ item }}"
+    state=present
+  with_items:
+    - "{{ apt_dependencies }}"
+  become: yes
+  when: apt_dependencies

@@ -1,0 +1,36 @@
+---
+
+ubuntu_release: "{{ ansible_distribution_release }}"
+
+apt_repositories:
+  - repo: "deb http://repository.spotify.com stable non-free"
+    key: BBEBDCB318AD50EC6865090613B00F1FD2C19886 
+  - repo: "deb http://dl.google.com/linux/chrome/deb stable main"
+    key:
+      id: 4CCA1EAF950CEE4AB83976DCA040830F7FAC5991
+      url: "https://dl-ssl.google.com/linux/linux_signing_key.pub"
+
+apt_install:
+  # Editors
+  - vim-gtk3-py2
+
+  # Power Management
+  - tlp
+  - tlp-rdw
+  - powertop
+
+  # Graphics
+  - gimp
+
+  # Services
+  - nautilus-dropbox
+
+  # Media
+  - spotify-client
+  - vlc
+
+  # Browsers
+  - google-chrome-stable
+
+  # Handy tools
+  - xclip

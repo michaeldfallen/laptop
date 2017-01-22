@@ -1,0 +1,10 @@
+---
+
+- name: Remove packages.
+  apt:
+    pkg: "{{ item }}"
+    state: absent
+  with_items: 
+    - "{{ apt_remove }}"
+  become: yes
+  when: apt_remove

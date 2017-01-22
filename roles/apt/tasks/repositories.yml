@@ -1,0 +1,32 @@
+---
+
+- debug:
+    msg: "{{ ('id' in item) | ternary(item.id, item) }}"
+  with_items:
+    - "{{ apt_repositories | selectattr('key') | list }}"
+
+- name: Install keys.
+  apt_key:
+    keyserver: "{{ ('file' in item.key) | ternary(omit, item.key.keyserver || 'keyserver.ubuntu.com') }}"
+    id: "{{ ('id' in item.key) | ternary(item.key.id, item.key) }}"
+    url: "{{ ('url' in item.key) | ternary(item.key.url, omit) }}"
+  with_items:
+    - "{{ apt_repositories | selectattr('key') | list }}"
+  when: apt_keys
+
+- name: Install repositories.
+  apt_repository:
+    repo: "{{ ('repo' in item) | ternary(item.repo, item) }}"
+    update_cache: yes
+  with_items:
+    - "{{ apt_repositories }}"
+  when: apt_repositories
+
+- name: Remove repositories.
+  apt_repository:
+    repo: "{{ item }}"
+    state: absent
+    update_cache: yes
+  with_items:
+    - "{{ apt_remove_repositories }}"
+  when: apt_remove_repositories

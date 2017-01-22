@@ -1,0 +1,54 @@
+#! /usr/bin/env bash
+#
+# laptop - configure a dev laptop
+#
+
+dot="$(cd "$(dirname "$([ -L "$0" ] && $READLINK_CMD -f "$0" || echo "$0")")"; pwd)"
+cd "$dot/.."
+
+
+install_deb() {
+  dpkg -s "$1" 2&> /dev/null || (echo "Install $1"; sudo apt install --yes -qqq $1)
+}
+
+install_ansible() {
+  install_deb python-pip
+  install_deb python-dev
+  install_deb gcc
+  install_deb libssl-dev
+  install_deb git
+  sudo -H pip install --upgrade pip
+  sudo -H pip install ansible
+}
+
+usage() {
+  echo "laptop - configure a dev laptop"
+  echo "usage:"
+  echo "  laptop [bootstrap|apply]"
+  exit 1
+}
+
+run_playbook() {
+  ansible-galaxy install -r requirements.yml
+  sudo ansible-playbook -i hosts "playbook.yml"
+}
+
+if [[ -z "$@" ]]; then
+  usage
+fi
+while [[ $# > 0 ]]; do
+  command="$1"
+  shift
+
+  case "$command" in
+    bootstrap)
+      install_ansible
+      ;;
+    apply)
+      run_playbook
+      ;;
+    *)
+      usage
+      ;;
+  esac
+done
