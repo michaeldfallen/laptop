@@ -1,1 +1,4 @@
 ---
+
+- src: https://github.com/michaeldfallen/ansible-role-apt
+  name: michaeldfallen.apt

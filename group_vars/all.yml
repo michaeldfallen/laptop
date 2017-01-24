@@ -2,9 +2,9 @@
 
 ubuntu_release: "{{ ansible_distribution_release }}"
 
-apt_repositories:
+apt_install_repositories:
   - repo: "deb http://repository.spotify.com stable non-free"
-    key: BBEBDCB318AD50EC6865090613B00F1FD2C19886 
+    key: BBEBDCB318AD50EC6865090613B00F1FD2C19886
   - repo: "deb http://dl.google.com/linux/chrome/deb stable main"
     key:
       id: 4CCA1EAF950CEE4AB83976DCA040830F7FAC5991
