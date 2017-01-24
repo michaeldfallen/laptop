@@ -1,0 +1,14 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+docker:
+  containers:
+    - name: laptop
+      image: ubuntu
+      image_version: yakkety
+      ansible_groups:
+        - group1
+verifier:
+  name: testinfra

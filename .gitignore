@@ -1,2 +1,5 @@
 *.swp
 roles/
+.molecule
+__pycache__
+*.pyc
