@@ -3,3 +3,4 @@ roles/
 .molecule
 __pycache__
 *.pyc
+vars/local.yml

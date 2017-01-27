@@ -1,0 +1,5 @@
+---
+
+# Set these vars locally on the laptop. They won't be committed.
+
+pia_username: False # Username for Private internet access
