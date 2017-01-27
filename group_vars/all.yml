@@ -10,7 +10,7 @@ apt_install_repositories:
       id: 4CCA1EAF950CEE4AB83976DCA040830F7FAC5991
       url: "https://dl-ssl.google.com/linux/linux_signing_key.pub"
 
-copy_file:
+copy_files:
   - src: powertop.systemd.service
     dest: /etc/systemd/system/powertop.service
 
