@@ -34,3 +34,19 @@ apt_install:
 
   # Handy tools
   - xclip
+
+vpn_connections:
+  - remote: uk-london.privateinternetaccess.com 
+    name: 'PIA UK London'
+  - remote: uk-southampton.privateinternetaccess.com 
+    name: 'PIA UK Southhampton'
+  - remote: nl.privateinternetaccess.com 
+    name: 'PIA Netherlands'
+  - remote: sweden.privateinternetaccess.com 
+    name: 'PIA Sweden'
+  - remote: ro.privateinternetaccess.com 
+    name: 'PIA Romania'
+  - remote: us-east.privateinternetaccess.com 
+    name: 'PIA US East'
+  - remote: us-newyorkcity.privateinternetaccess.com 
+    name: 'PIA US New York City'
