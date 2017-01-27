@@ -1,4 +1,10 @@
 ---
 
-- src: https://github.com/michaeldfallen/ansible-role-apt
-  name: michaeldfallen.apt
+- name: michaeldfallen.apt
+  src: https://github.com/michaeldfallen/ansible-role-apt
+
+- name: michaeldfallen.pia
+  src: https://github.com/michaeldfallen/ansible-pia-vpn
+
+- name: michaeldfallen.dotfiles
+  src: https://github.com/michaeldfallen/ansible-role-dotfiles
