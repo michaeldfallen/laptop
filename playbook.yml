@@ -1,6 +1,8 @@
 ---
 
 - hosts: all
+  vars_files:
+    - vars/local.yml
   roles:
     - role: michaeldfallen.apt
       become: yes
