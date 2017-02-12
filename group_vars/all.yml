@@ -38,6 +38,7 @@ apt_install:
 
   # Handy tools
   - xclip
+  - gparted
 
 vpn_connections:
   - remote: uk-london.privateinternetaccess.com 
