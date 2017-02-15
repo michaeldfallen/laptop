@@ -4,6 +4,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Ctrl P for file searching
+Plug 'ctrlpvim/ctrlp.vim'
+
 " Solarized colour scheme
 Plug 'altercation/vim-colors-solarized'
 
