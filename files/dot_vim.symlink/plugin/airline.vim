@@ -9,3 +9,5 @@ set ttimeoutlen=10
 let g:airline_powerline_fonts=1
 let g:Powerline_symbols = 'fancy'
 
+" Display open buffers
+let g:airline#extensions#tabline#enabled = 1
