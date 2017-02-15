@@ -1,6 +1,6 @@
 
-" Leader+b - open CtrlP for buffers
+" Leader+f - open CtrlP for files
 nmap <leader>f :CtrlP<CR>
 
-" Leader+f - open CtrlP for files
-nmap <leader>f :CtrlPBuffer<CR>
+" Leader+b - open CtrlP for buffers
+nmap <leader>b :CtrlPBuffer<CR>
