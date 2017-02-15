@@ -5,3 +5,4 @@ __pycache__
 *.pyc
 vars/local.yml
 files/dot_vim.symlink/plugged
+.netrwhist
