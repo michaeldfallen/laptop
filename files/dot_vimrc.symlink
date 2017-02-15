@@ -13,4 +13,10 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " indentLine plugin - https://github.com/Yggdroot/indentLine
 Plug 'Yggdroot/indentLine'
 
+" Vim Dev icons (needs to be last)
+Plug 'ryanoasis/vim-devicons'
+
+" Adds colours to filetype icons
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
 call plug#end()

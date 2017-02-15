@@ -23,3 +23,6 @@ let NERDTreeSortOrder=[
 \   '\.swp$',
 \   '\~$',
 \ ]
+
+" Ensure vim-devicons doesn't add too much spacing in NerdTree
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
