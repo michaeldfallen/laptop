@@ -1,5 +1,7 @@
 ---
 
+user: michael
+
 ubuntu_release: "{{ ansible_distribution_release }}"
 
 apt_install_repositories:
@@ -9,10 +11,6 @@ apt_install_repositories:
     key:
       id: 4CCA1EAF950CEE4AB83976DCA040830F7FAC5991
       url: "https://dl-ssl.google.com/linux/linux_signing_key.pub"
-
-copy_files:
-  - src: powertop.systemd.service
-    dest: /etc/systemd/system/powertop.service
 
 apt_install:
   # Editors
@@ -39,6 +37,23 @@ apt_install:
   # Handy tools
   - xclip
   - gparted
+
+git_repos:
+  - repo: https://github.com/ryanoasis/nerd-fonts
+    path: ~/.repos/nerd-fonts
+
+
+copy_files:
+  - src: powertop.systemd.service
+    dest: /etc/systemd/system/powertop.service
+    owner: root
+    group: root
+
+link_files:
+  - src: "~/.repos/nerd-fonts/patched-fonts"
+    dest: "~/.local/share/fonts/nerd-fonts"
+  # - src: "~/.repos/nerd-fonts/patched-fonts/Meslo/L/complete/Meslo LG L Regular for Powerline Nerd Font Complete Mono.otf"
+  #  dest: ~/.local/share/fonts/Meslo-LG-L.otf
 
 vpn_connections:
   - remote: uk-london.privateinternetaccess.com 

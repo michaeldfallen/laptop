@@ -8,3 +8,6 @@
 
 - name: michaeldfallen.dotfiles
   src: https://github.com/michaeldfallen/ansible-role-dotfiles
+
+- name: michaeldfallen.scm_repos
+  src: https://github.com/michaeldfallen/ansible-role-scm-repos

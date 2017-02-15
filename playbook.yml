@@ -6,5 +6,6 @@
   roles:
     - role: michaeldfallen.apt
       become: yes
+    - role: michaeldfallen.scm_repos
     - role: michaeldfallen.pia
     - role: michaeldfallen.dotfiles
