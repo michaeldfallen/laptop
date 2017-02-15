@@ -1,5 +1,4 @@
-Plug 'altercation/vim-colors-solarized'
-
+" Switch to Solarized Dark
 set background=dark
 
 " Support 256 colours of gnome terminal

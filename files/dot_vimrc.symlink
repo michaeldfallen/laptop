@@ -1,0 +1,16 @@
+call plug#begin('~/.vim/plugged')
+
+" Vim Airline - https://github.com/vim-airline/vim-airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" Solarized colour scheme
+Plug 'altercation/vim-colors-solarized'
+
+" NerdTree - https://github.com/scrooloose/nerdtree
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+
+" indentLine plugin - https://github.com/Yggdroot/indentLine
+Plug 'Yggdroot/indentLine'
+
+call plug#end()

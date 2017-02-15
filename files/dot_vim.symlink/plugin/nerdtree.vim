@@ -1,6 +1,3 @@
-" Load NerdTree
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-
 " NerdTree don't open on startup
 let g:nerdtree_tabs_open_on_gui_startup=0
 
