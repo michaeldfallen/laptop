@@ -6,3 +6,4 @@ __pycache__
 vars/local.yml
 files/dot_vim.symlink/plugged
 .netrwhist
+playbook.retry
