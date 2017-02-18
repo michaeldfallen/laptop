@@ -38,6 +38,11 @@ apt_install:
   - xclip
   - gparted
 
+  # Runtimes
+  - cmake
+  - gcc
+  - g++
+
 git_repos:
   - repo: https://github.com/ryanoasis/nerd-fonts
     path: ~/.repos/nerd-fonts

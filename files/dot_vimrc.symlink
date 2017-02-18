@@ -7,6 +7,16 @@ Plug 'vim-airline/vim-airline-themes'
 " Ctrl P for file searching
 Plug 'ctrlpvim/ctrlp.vim'
 
+" YouCompleteMe - https://github.com/Valloric/YouCompleteMe
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+
+" Ultisnips - https://github.com/SirVer/ultisnips
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+" Supertab - controls how we complete from YCM and ultisnips
+Plug 'ervandew/supertab'
+
 " Surround - https://github.com/tpope/vim-surround
 Plug 'tpope/vim-surround'
 
