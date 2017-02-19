@@ -13,6 +13,9 @@ apt_install_repositories:
       url: "https://dl-ssl.google.com/linux/linux_signing_key.pub"
 
 apt_install:
+  # Gnome theme
+  - arc-theme
+
   # Editors
   - vim-gtk3-py2
 
@@ -59,6 +62,22 @@ link_files:
     dest: "~/.local/share/fonts/nerd-fonts"
   # - src: "~/.repos/nerd-fonts/patched-fonts/Meslo/L/complete/Meslo LG L Regular for Powerline Nerd Font Complete Mono.otf"
   #  dest: ~/.local/share/fonts/Meslo-LG-L.otf
+
+gsettings:
+  - schema: 'org.gnome.desktop.interface'
+    settings:
+      - key: 'gtk-theme'
+        value: 'Arc-Darker'
+      - key: 'monospace-font-name'
+        value: 'Knack Nerd Font 13'
+  - schema: 'org.gnome.desktop.input-sources'
+    settings:
+      - key: 'xkb-options'
+        value: "['caps:escape']"
+  - schema: 'org.gnome.desktop.wm.preferences'
+    settings:
+      - key: 'button-layout'
+        value: 'close,maximize,minimize:appmenu'
 
 vpn_connections:
   - remote: uk-london.privateinternetaccess.com 

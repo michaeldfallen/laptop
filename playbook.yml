@@ -9,3 +9,4 @@
     - role: michaeldfallen.scm_repos
     - role: michaeldfallen.pia
     - role: michaeldfallen.dotfiles
+    - role: michaeldfallen.gsettings
