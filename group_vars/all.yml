@@ -13,8 +13,9 @@ apt_install_repositories:
       url: "https://dl-ssl.google.com/linux/linux_signing_key.pub"
 
 apt_install:
-  # Gnome theme
+  # Look and feel
   - arc-theme
+  - variety
 
   # Editors
   - vim-gtk3-py2
@@ -49,6 +50,8 @@ apt_install:
 git_repos:
   - repo: https://github.com/ryanoasis/nerd-fonts
     path: ~/.repos/nerd-fonts
+  - repo: https://github.com/Anthony25/gnome-terminal-colors-solarized
+    path: ~/.repos/gnome-solarized
 
 
 copy_files:
@@ -60,6 +63,8 @@ copy_files:
 link_files:
   - src: "~/.repos/nerd-fonts/patched-fonts"
     dest: "~/.local/share/fonts/nerd-fonts"
+  - src: "~/laptop/files/variety.conf"
+    dest: "~/.config/variety/variety.conf"
   # - src: "~/.repos/nerd-fonts/patched-fonts/Meslo/L/complete/Meslo LG L Regular for Powerline Nerd Font Complete Mono.otf"
   #  dest: ~/.local/share/fonts/Meslo-LG-L.otf
 
@@ -74,6 +79,12 @@ gsettings:
     settings:
       - key: 'xkb-options'
         value: "['caps:escape']"
+  - schema: 'org.gnome.desktop.peripherals.keyboard'
+    settings:
+      - key: 'repeat-interval'
+        value: '15'
+      - key: 'delay'
+        value: '250'
   - schema: 'org.gnome.desktop.wm.preferences'
     settings:
       - key: 'button-layout'
