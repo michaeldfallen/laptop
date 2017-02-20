@@ -65,8 +65,6 @@ link_files:
     dest: "~/.local/share/fonts/nerd-fonts"
   - src: "~/laptop/files/variety.conf"
     dest: "~/.config/variety/variety.conf"
-  # - src: "~/.repos/nerd-fonts/patched-fonts/Meslo/L/complete/Meslo LG L Regular for Powerline Nerd Font Complete Mono.otf"
-  #  dest: ~/.local/share/fonts/Meslo-LG-L.otf
 
 gsettings:
   - schema: 'org.gnome.desktop.interface'
