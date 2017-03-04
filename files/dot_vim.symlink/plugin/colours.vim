@@ -5,4 +5,4 @@ set background=dark
 let g:solarized_termcolors=256
 
 " Set solarized colour scheme
-colorscheme solarized
+colorscheme base16-solar-flare

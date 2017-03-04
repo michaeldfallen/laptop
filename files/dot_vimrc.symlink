@@ -20,6 +20,9 @@ Plug 'ervandew/supertab'
 " Surround - https://github.com/tpope/vim-surround
 Plug 'tpope/vim-surround'
 
+" Base16 colours
+Plug 'chriskempson/base16-vim'
+
 " Solarized colour scheme
 Plug 'altercation/vim-colors-solarized'
 

@@ -50,9 +50,8 @@ apt_install:
 git_repos:
   - repo: https://github.com/ryanoasis/nerd-fonts
     path: ~/.repos/nerd-fonts
-  - repo: https://github.com/Anthony25/gnome-terminal-colors-solarized
-    path: ~/.repos/gnome-solarized
-
+  - repo: https://github.com/aaron-williamson/base16-gnome-terminal
+    path: ~/.repos/base16-gnome
 
 copy_files:
   - src: powertop.systemd.service
