@@ -18,7 +18,7 @@ apt_install:
   - variety
 
   # Editors
-  - vim-gtk3-py2
+  - vim-gtk-py2
 
   # Power Management
   - tlp
