@@ -11,6 +11,8 @@ apt_install_repositories:
     key:
       id: 4CCA1EAF950CEE4AB83976DCA040830F7FAC5991
       url: "https://dl-ssl.google.com/linux/linux_signing_key.pub"
+  - 'ppa:webupd8team/atom'
+  - 'ppa:neovim-ppa/unstable'
 
 apt_install:
   # Look and feel
@@ -19,6 +21,9 @@ apt_install:
 
   # Editors
   - vim-gtk-py2
+  - neovim
+  - atom
+  - arduino
 
   # Power Management
   - tlp
