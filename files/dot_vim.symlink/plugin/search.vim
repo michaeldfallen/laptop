@@ -9,3 +9,6 @@ set smartcase
 
 " highlight all search results
 set hlsearch
+
+" \+q to hide search results highlights
+nnoremap <leader>q :nohlsearch<CR>
