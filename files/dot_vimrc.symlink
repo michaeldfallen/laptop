@@ -38,4 +38,7 @@ Plug 'ryanoasis/vim-devicons'
 " Adds colours to filetype icons
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
+" Use buffkill for better buffer interaction
+Plug 'qpkorr/vim-bufkill'
+
 call plug#end()

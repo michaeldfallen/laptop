@@ -13,3 +13,7 @@ noremap <C-j> <C-W>j
 noremap <C-k> <C-W>k
 noremap <C-h> <C-W>h
 noremap <C-l> <C-W>l
+
+" Use \+Arrow keys to switch buffers
+nmap <leader><Left> :bprev<CR>
+nmap <leader><Right> :bnext<CR>
