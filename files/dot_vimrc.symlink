@@ -28,6 +28,7 @@ Plug 'altercation/vim-colors-solarized'
 
 " NerdTree - https://github.com/scrooloose/nerdtree
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
 
 " indentLine plugin - https://github.com/Yggdroot/indentLine
 Plug 'Yggdroot/indentLine'
@@ -40,5 +41,9 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Use buffkill for better buffer interaction
 Plug 'qpkorr/vim-bufkill'
+
+" Fugitive and git gutter for nice git integration
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
