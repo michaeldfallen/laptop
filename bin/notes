@@ -1,0 +1,6 @@
+#! /usr/bin/env bash
+#
+# notes - open my notes
+#
+
+gvim -c 'cd /home/michael/Dropbox/Documents/notes' -c 'NERDTreeToggle'
