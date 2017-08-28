@@ -14,10 +14,13 @@ apt_install_repositories:
   - 'ppa:webupd8team/atom'
   - 'ppa:neovim-ppa/unstable'
 
+apt_upgrade: false
+
 apt_install:
   # Look and feel
   - arc-theme
   - variety
+  - caffeine
 
   # Terminal
   - tilda
