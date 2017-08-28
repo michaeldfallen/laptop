@@ -65,6 +65,8 @@ git_repos:
     path: ~/.repos/zsh-completions
   - repo: https://github.com/chriskempson/base16-shell
     path: ~/.repos/base16-shell
+  - repo: https://github.com/creationix/nvm
+    path: ~/.nvm
 
 copy_files:
   - src: powertop.systemd.service
@@ -117,3 +119,6 @@ vpn_connections:
     name: 'PIA US East'
   - remote: us-newyorkcity.privateinternetaccess.com 
     name: 'PIA US New York City'
+
+post_run_scripts:
+  - 'nvm install v8'
