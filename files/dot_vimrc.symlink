@@ -23,9 +23,6 @@ Plug 'tpope/vim-surround'
 " Base16 colours
 Plug 'chriskempson/base16-vim'
 
-" Solarized colour scheme
-Plug 'altercation/vim-colors-solarized'
-
 " NerdTree - https://github.com/scrooloose/nerdtree
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
