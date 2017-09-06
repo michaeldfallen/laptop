@@ -4,8 +4,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" Ctrl P for file searching
-Plug 'ctrlpvim/ctrlp.vim'
+" Command T for file finding
+Plug 'wincent/command-t', {
+\   'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
+\ }
 
 " YouCompleteMe - https://github.com/Valloric/YouCompleteMe
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }

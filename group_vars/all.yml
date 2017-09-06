@@ -59,6 +59,7 @@ apt_install:
   - cmake
   - gcc
   - g++
+  - ruby-dev
   - docker
 
 git_repos:
