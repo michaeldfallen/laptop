@@ -30,9 +30,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " indentLine plugin - https://github.com/Yggdroot/indentLine
 Plug 'Yggdroot/indentLine'
 
-" Adds colours to filetype icons
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
 " Use buffkill for better buffer interaction
 Plug 'qpkorr/vim-bufkill'
 
