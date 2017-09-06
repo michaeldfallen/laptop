@@ -53,6 +53,7 @@ apt_install:
   # Handy tools
   - xclip
   - gparted
+  - exuberant-ctags
 
   # Runtimes
   - cmake
@@ -126,3 +127,4 @@ vpn_connections:
 
 post_run_scripts:
   - 'nvm install v8'
+  - 'npm install --global ramitos/jsctags'

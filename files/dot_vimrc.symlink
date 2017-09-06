@@ -37,6 +37,9 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
+Plug 'majutsushi/tagbar'
+
 " Vim Dev icons (needs to be last)
 Plug 'ryanoasis/vim-devicons'
 
