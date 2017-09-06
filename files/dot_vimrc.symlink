@@ -27,14 +27,11 @@ Plug 'chriskempson/base16-vim'
 Plug 'altercation/vim-colors-solarized'
 
 " NerdTree - https://github.com/scrooloose/nerdtree
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " indentLine plugin - https://github.com/Yggdroot/indentLine
 Plug 'Yggdroot/indentLine'
-
-" Vim Dev icons (needs to be last)
-Plug 'ryanoasis/vim-devicons'
 
 " Adds colours to filetype icons
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -45,5 +42,8 @@ Plug 'qpkorr/vim-bufkill'
 " Fugitive and git gutter for nice git integration
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+
+" Vim Dev icons (needs to be last)
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()

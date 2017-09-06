@@ -24,5 +24,17 @@ let NERDTreeSortOrder=[
 \   '\~$',
 \ ]
 
-" Ensure vim-devicons doesn't add too much spacing in NerdTree
-let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
+
+" Use devicons for git nerdtree icons
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : " ",
+    \ "Staged"    : " ",
+    \ "Untracked" : " ",
+    \ "Renamed"   : " ",
+    \ "Unmerged"  : " ",
+    \ "Deleted"   : " ",
+    \ "Dirty"     : " ",
+    \ "Clean"     : "✔︎ ",
+    \ 'Ignored'   : ' ',
+    \ "Unknown"   : "? "
+    \ }
