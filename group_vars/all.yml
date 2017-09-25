@@ -128,4 +128,4 @@ vpn_connections:
 
 post_run_scripts:
   - 'nvm install v8'
-  - 'npm install --global ramitos/jsctags'
+  - 'npm install --global ramitos/jsctags eslint @hmcts/eslint-config'
