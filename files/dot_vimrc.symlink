@@ -13,7 +13,7 @@ Plug 'wincent/command-t', {
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 
 " Syntastic - https://github.com/vim-syntastic/syntastic
-Plug 'vim-syntastic/syntastic'
+" Plug 'vim-syntastic/syntastic'
 
 " Ultisnips - https://github.com/SirVer/ultisnips
 Plug 'SirVer/ultisnips'
@@ -32,8 +32,8 @@ Plug 'chriskempson/base16-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" indentLine plugin - https://github.com/Yggdroot/indentLine
-Plug 'Yggdroot/indentLine'
+" Indent guides enabled by <Leader>ig
+Plug 'nathanaelkane/vim-indent-guides'
 
 " Use buffkill for better buffer interaction
 Plug 'qpkorr/vim-bufkill'
@@ -45,7 +45,21 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'majutsushi/tagbar'
 
-" Vim Dev icons (needs to be last)
-Plug 'ryanoasis/vim-devicons'
+" Enable cursor changing in terminal
+Plug 'jszakmeister/vim-togglecursor'
+
+" Auto close opened ( [ { ' " etc
+Plug 'jiangmiao/auto-pairs'
+
+" Easier w b e etc motions
+Plug 'easymotion/vim-easymotion'
+
+" Fast searching using ack
+Plug 'mileszs/ack.vim'
+
+" Sublime style minimap :minimap
+Plug 'severin-lemaignan/vim-minimap'
+
+Plug 'w0rp/ale'
 
 call plug#end()

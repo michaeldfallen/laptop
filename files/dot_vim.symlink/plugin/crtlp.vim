@@ -1,6 +1,6 @@
 
 " Leader+f - open CtrlP for files
-nmap <leader>f :CtrlP<CR>
+nmap <leader>f :CommandT<CR>
 
 " Leader+b - open CtrlP for buffers
-nmap <leader>b :CtrlPBuffer<CR>
+nmap <leader>b :CommandTBuffer<CR>

@@ -54,6 +54,7 @@ apt_install:
   - xclip
   - gparted
   - exuberant-ctags
+  - ack
 
   # Runtimes
   - cmake

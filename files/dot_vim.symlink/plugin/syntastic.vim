@@ -12,7 +12,7 @@ let g:syntastic_warning_symbol = '!'
 
 " Put error messages in the Location list and open it after checking
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 
 " Check on file open and write
 let g:syntastic_check_on_open = 1
