@@ -1,2 +1,6 @@
 " Share the clipboard y copies into clipboard p pastes from it
-set clipboard=unnamedplus
+if has('gui_macvim')
+  set clipboard=unnamed
+elseif has('gui_running')
+  set clipboard=unnamedplus
+endif

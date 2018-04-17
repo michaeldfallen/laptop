@@ -9,7 +9,7 @@ ret_status() {
 }
 
 git_radar() {
-  USE_DEV_RADAR="${USE_DEV_RADAR:-"true"}"
+  USE_DEV_RADAR="${USE_DEV_RADAR:-"false"}"
   if [[ $USE_DEV_RADAR == "true" ]]; then
     ~/Projects/personal/git-radar/git-radar --zsh --fetch
   else
@@ -17,7 +17,7 @@ git_radar() {
   fi
 }
 
-powerline_branch="$(printf '\ue0a0')"
+powerline_branch="$(printf '\uf401')"
 export GIT_RADAR_MASTER_SYMBOL="%{$fg_bold[blue]%}$powerline_branch%{$reset_color%}"
 export GIT_RADAR_COLOR_BRANCH="$fg[white]"
 export GIT_RADAR_COLOR_CHANGES_STAGED="$fg[green]"

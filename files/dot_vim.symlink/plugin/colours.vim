@@ -6,4 +6,4 @@ let g:solarized_termcolors=256
 let base16colorspace=256
 
 " Set solarized colour scheme
-colorscheme base16-solar-flare
+colorscheme base16-solarflare
