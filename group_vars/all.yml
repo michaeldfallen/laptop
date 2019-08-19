@@ -5,8 +5,6 @@ user: michael
 ubuntu_release: "{{ ansible_distribution_release }}"
 
 apt_install_repositories:
-  - repo: "deb http://repository.spotify.com stable non-free"
-    key: BBEBDCB318AD50EC6865090613B00F1FD2C19886
   - repo: "deb http://dl.google.com/linux/chrome/deb stable main"
     key:
       id: 4CCA1EAF950CEE4AB83976DCA040830F7FAC5991
@@ -27,7 +25,7 @@ apt_install:
   - zsh
 
   # Editors
-  - vim-gtk-py2
+  - vim-gtk
   - neovim
   - atom
   - arduino
@@ -44,7 +42,6 @@ apt_install:
   - nautilus-dropbox
 
   # Media
-  - spotify-client
   - vlc
 
   # Browsers
@@ -63,6 +60,10 @@ apt_install:
   - ruby-dev
   - docker
 
+  # Map mouse buttons
+  - xbindkeys
+  - xdotool
+
 git_repos:
   - repo: https://github.com/ryanoasis/nerd-fonts
     path: ~/.repos/nerd-fonts
@@ -74,6 +75,8 @@ git_repos:
     path: ~/.repos/base16-shell
   - repo: https://github.com/creationix/nvm
     path: ~/.nvm
+  - repo: https://github.com/gcuisinier/jenv.git
+    path: ~/.jenv
 
 copy_files:
   - src: powertop.systemd.service
@@ -95,7 +98,7 @@ gsettings:
       - key: 'gtk-theme'
         value: 'Arc-Darker'
       - key: 'monospace-font-name'
-        value: 'Knack Nerd Font 13'
+        value: 'Hack Nerd Font 13'
   - schema: 'org.gnome.desktop.input-sources'
     settings:
       - key: 'xkb-options'
@@ -126,7 +129,3 @@ vpn_connections:
     name: 'PIA US East'
   - remote: us-newyorkcity.privateinternetaccess.com
     name: 'PIA US New York City'
-
-post_run_scripts:
-  - 'nvm install v8'
-  - 'npm install --global ramitos/jsctags eslint @hmcts/eslint-config'

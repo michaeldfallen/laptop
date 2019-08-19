@@ -29,6 +29,14 @@ let g:airline#extensions#tabline#enabled = 1
 " +---------------------------------------------------------------------------+
 " | A | B |                     C                          X | Y | Z |  [...] |
 " +---------------------------------------------------------------------------+
+function! AirlineInit()
+  let g:airline_section_b = airline#section#create([])
+  let g:airline_section_y = airline#section#create([])
+  let g:airline_section_z = airline#section#create(['%l', '/', '%L'])
+endfunction
+
+autocmd VimEnter * call AirlineInit()
+
 let g:airline_mode_map = {
   \ '__' : '-',
   \ 'n'  : 'N',

@@ -1,0 +1,6 @@
+{
+  "extends": "@hmcts",
+  "parserOptions": {
+    "ecmaVersion": 2018
+  }
+}

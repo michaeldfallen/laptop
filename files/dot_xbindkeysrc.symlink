@@ -1,0 +1,3 @@
+# Trigger Overview (key Menu) on mouse thumb button (10)
+"xdotool key Overview"
+release + b:10

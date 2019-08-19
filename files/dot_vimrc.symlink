@@ -1,19 +1,15 @@
 call plug#begin('~/.vim/plugged')
 
+let mapleader = "#"
+
 " Vim Airline - https://github.com/vim-airline/vim-airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" Command T for file finding
-Plug 'wincent/command-t', {
-\   'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
-\ }
+Plug 'ctrlpvim/ctrlp.vim'
 
 " YouCompleteMe - https://github.com/Valloric/YouCompleteMe
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-
-" Syntastic - https://github.com/vim-syntastic/syntastic
-" Plug 'vim-syntastic/syntastic'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --ts-completer' }
 
 " Ultisnips - https://github.com/SirVer/ultisnips
 Plug 'SirVer/ultisnips'
@@ -30,7 +26,7 @@ Plug 'chriskempson/base16-vim'
 
 " NerdTree - https://github.com/scrooloose/nerdtree
 Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Indent guides enabled by <Leader>ig
 Plug 'nathanaelkane/vim-indent-guides'
@@ -42,7 +38,7 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
+" Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'for': 'javascript' }
 Plug 'majutsushi/tagbar'
 
 " Enable cursor changing in terminal
@@ -63,7 +59,7 @@ Plug 'severin-lemaignan/vim-minimap'
 Plug 'w0rp/ale'
 
 " JS and react styling
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty', { 'for': 'javascript' }
 
 " Markdown writing
@@ -72,5 +68,7 @@ Plug 'junegunn/limelight.vim', { 'for': 'markdown' }
 
 " Respond to .editorconfig files
 Plug 'editorconfig/editorconfig-vim'
+
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()

@@ -27,14 +27,22 @@ let NERDTreeSortOrder=[
 
 " Use devicons for git nerdtree icons
 let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : " ",
-    \ "Staged"    : " ",
-    \ "Untracked" : " ",
-    \ "Renamed"   : " ",
-    \ "Unmerged"  : " ",
-    \ "Deleted"   : " ",
-    \ "Dirty"     : " ",
-    \ "Clean"     : "✔︎ ",
-    \ 'Ignored'   : ' ',
-    \ "Unknown"   : "? "
+    \ "Modified"  : "",
+    \ "Staged"    : "",
+    \ "Untracked" : "",
+    \ "Renamed"   : "",
+    \ "Unmerged"  : "",
+    \ "Deleted"   : "",
+    \ "Dirty"     : "\uf440",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : "",
+    \ "Unknown"   : "?"
     \ }
+
+let g:NERDTreeColorMapCustom = {
+    \ "Modified"  : "#528AB3",  
+    \ "Staged"    : "#538B54",  
+    \ "Untracked" : "#BE5849",  
+    \ "Dirty"     : "#299999",  
+    \ "Clean"     : "#87939A"   
+    \ } 
