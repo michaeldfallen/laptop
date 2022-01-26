@@ -40,6 +40,12 @@ for f in $HOME/.zshrc.d/completion/*.zsh(.N); do
   source $f
 done
 
+# Source secrets
+for f in $HOME/.zshrc.d/secrets/*.zsh(.N); do
+  source $f
+done
+
+
 # added by travis gem
 [ -f /home/michael/.travis/travis.sh ] && source /home/michael/.travis/travis.sh
 

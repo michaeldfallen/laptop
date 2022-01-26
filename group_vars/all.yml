@@ -4,20 +4,11 @@ user: michael
 
 ubuntu_release: "{{ ansible_distribution_release }}"
 
-apt_install_repositories:
-  - repo: "deb http://dl.google.com/linux/chrome/deb stable main"
-    key:
-      id: 4CCA1EAF950CEE4AB83976DCA040830F7FAC5991
-      url: "https://dl-ssl.google.com/linux/linux_signing_key.pub"
-  - 'ppa:webupd8team/atom'
-  - 'ppa:neovim-ppa/unstable'
-
 apt_upgrade: false
 
 apt_install:
   # Look and feel
   - arc-theme
-  - variety
   - caffeine
 
   # Terminal
@@ -27,8 +18,6 @@ apt_install:
   # Editors
   - vim-gtk
   - neovim
-  - atom
-  - arduino
 
   # Power Management
   - tlp
@@ -40,12 +29,10 @@ apt_install:
 
   # Services
   - nautilus-dropbox
+  - chrome-gnome-shell
 
   # Media
   - vlc
-
-  # Browsers
-  - google-chrome-stable
 
   # Handy tools
   - xclip
@@ -73,23 +60,11 @@ git_repos:
     path: ~/.repos/zsh-completions
   - repo: https://github.com/chriskempson/base16-shell
     path: ~/.repos/base16-shell
-  - repo: https://github.com/creationix/nvm
-    path: ~/.nvm
-  - repo: https://github.com/gcuisinier/jenv.git
-    path: ~/.jenv
-
-copy_files:
-  - src: powertop.systemd.service
-    dest: /etc/systemd/system/powertop.service
-    owner: root
-    group: root
 
 link_files:
   - src: "~/.repos/nerd-fonts/patched-fonts"
     dest: "~/.local/share/fonts/nerd-fonts"
-  - src: "~/laptop/files/variety.conf"
-    dest: "~/.config/variety/variety.conf"
-  - src: "~/laptop/files/tilda_config"
+  - src: "~/.laptop/files/tilda_config"
     dest: "~/.config/tilda/config_0"
 
 gsettings:
@@ -113,19 +88,3 @@ gsettings:
     settings:
       - key: 'button-layout'
         value: 'close,maximize,minimize:appmenu'
-
-vpn_connections:
-  - remote: uk-london.privateinternetaccess.com
-    name: 'PIA UK London'
-  - remote: uk-southampton.privateinternetaccess.com
-    name: 'PIA UK Southhampton'
-  - remote: nl.privateinternetaccess.com
-    name: 'PIA Netherlands'
-  - remote: sweden.privateinternetaccess.com
-    name: 'PIA Sweden'
-  - remote: ro.privateinternetaccess.com
-    name: 'PIA Romania'
-  - remote: us-east.privateinternetaccess.com
-    name: 'PIA US East'
-  - remote: us-newyorkcity.privateinternetaccess.com
-    name: 'PIA US New York City'

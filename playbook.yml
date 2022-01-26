@@ -10,6 +10,3 @@
     - role: michaeldfallen.pia
     - role: michaeldfallen.dotfiles
     - role: michaeldfallen.gsettings
-    - role: michaeldfallen.run_once
-      vars:
-        scripts: "{{ post_run_scripts | default([])}}"
